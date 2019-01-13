@@ -1,0 +1,15 @@
+.HomeTitle {
+  margin-top: 25vh;
+  width: 100%;
+  text-align: center;
+}
+
+.Name {
+  font-size: 60pt;
+  text-align: left;
+}
+
+
+.Blurb {
+  font-style: italic;
+}
