@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+﻿This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -79,3 +79,6 @@ To push:-
 
 remote repository = origin
 branch = master (Might add more branches later on, eg gh-page branch)
+
+
+

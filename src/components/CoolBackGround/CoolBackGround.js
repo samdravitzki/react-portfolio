@@ -4,8 +4,8 @@ import './CoolBackGround.css'
 export class CoolBackGround extends Component {
   render() {
     return (
-      <div className="CoolBackGround">
-        {generateBackground(1000)}
+      <div className="CoolBackGround" style={{backgroundColor: this.props.bgColor, color: this.props.textColor}}>
+        <span class="pattern"> {generateBackground(999)} </span>
       </div>
     )
   }
@@ -20,9 +20,9 @@ const generateBackground = (slashCount) => {
   for(let i = 0; i < slashCount; i++){
     let randomNumber = Math.random();
 
-    output += randomNumber < 0.5 ? fslash : bslash;
+    output += randomNumber < 0.7 ? fslash : bslash;
 
-    if (i % 30 == 0) {
+    if (i % 30 === 0) {
       output += '\n';
     }
   }

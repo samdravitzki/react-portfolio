@@ -1,16 +1,17 @@
 .CoolBackGround {
-  top:0;
-  left:0;
   position: absolute;
   width: 100%; /* Do this better */
   height: 100%;
 
   font-size: 4rem;
   line-height: 0.8;
-
-  background-color: #282c34;
-  color: #414652;
   
   overflow: hidden;
   z-index: -1;
+}
+
+.pattern {
+  display: block;
+  text-align: center;
+  transform: translate(0, -5vh);
 }

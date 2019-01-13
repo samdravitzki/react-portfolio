@@ -8,7 +8,7 @@ export class HomeView extends Component {
   render() {
     return (
       <div className="HomeView">
-          <CoolBackGround />
+          <CoolBackGround bgColor='#282c34' textColor='#414652' />
           <Navbar/>
           <HomeTitle/>
       </div>
