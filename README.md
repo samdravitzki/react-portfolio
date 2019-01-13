@@ -66,3 +66,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+** Bootstrapped with create-react-app **
+
+To pull:-
+	git pull <remote repository> <branch>
+
+To push:-
+	git push <remote repository> <branch>
+
+
+
+remote repository = origin
+branch = master (Might add more branches later on, eg gh-page branch)
