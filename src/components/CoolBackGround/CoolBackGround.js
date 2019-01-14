@@ -4,27 +4,32 @@ import './CoolBackGround.css'
 export class CoolBackGround extends Component {
   render() {
     return (
+      // <div className="CoolBackGround" style={{backgroundColor: this.props.bgColor, color: this.props.textColor}}>
+      //   <span class="pattern"> {generateBackground(999)} </span>
+      // </div>
+      
       <div className="CoolBackGround" style={{backgroundColor: this.props.bgColor, color: this.props.textColor}}>
-        <span class="pattern"> {generateBackground(999)} </span>
+        <div className="grid-container"> 
+          {generateSlashes(1000).map(slash => (
+            <div className="grid-cell">{slash}</div>
+          ))} 
+        </div>
       </div>
     )
   }
 }
 
-const generateBackground = (slashCount) => {
+// REFACTOR to use array methods
+const generateSlashes = (slashCount) => {
   const fslash = '⋰';
   const bslash = '⧅';
   
-  let output = "";
+  let output = [];
 
   for(let i = 0; i < slashCount; i++){
     let randomNumber = Math.random();
 
-    output += randomNumber < 0.7 ? fslash : bslash;
-
-    if (i % 30 === 0) {
-      output += '\n';
-    }
+    output.push(randomNumber < 0.7 ? fslash : bslash);
   }
 
   return output;
