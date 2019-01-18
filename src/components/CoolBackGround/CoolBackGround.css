@@ -1,24 +1,19 @@
 
 .CoolBackGround {
   position: absolute;
-  width: 100%; /* Do this better */
+  z-index: -1;
+  width: 100%; 
   height: 100%;
 
   font-size: 4rem;
   line-height: 0.8;
 
   overflow: hidden;
-  z-index: -1;
 }
 
-.pattern {
-  display: block;
-  text-align: center;
-  transform: translate(0, -5vh);
-}
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(4rem, 1fr) );
+  grid-template-columns: repeat( auto-fill, minmax(4rem, 2fr) );
   justify-content: center;
 }

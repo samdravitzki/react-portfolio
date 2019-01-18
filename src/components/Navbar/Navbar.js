@@ -27,7 +27,11 @@ export class Navbar extends Component {
   render() {
     return (
       <div className="Navbar">
-        {this.state.buttons.map(button => {return <Navbutton label={button.label} />} )}
+        
+        {
+          this.state.buttons.map(button => {
+            return <Navbutton label={button.label} />})
+        }
       </div>
     )
   }

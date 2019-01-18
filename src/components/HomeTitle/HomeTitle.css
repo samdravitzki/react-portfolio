@@ -1,12 +1,14 @@
 .HomeTitle {
-  margin-top: 25vh;
-  width: 100%;
-  text-align: center;
+  /* margin-top: 25vh; */
+  /* width: 100%; */
+  /* text-align: center; */
+  text-align: right;
 }
 
 .Name {
-  font-size: 60pt;
-  text-align: left;
+  font-size: 5rem;
+  text-align: right;
+  line-height: 1.1;
 }
 
 

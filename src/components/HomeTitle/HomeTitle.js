@@ -13,7 +13,7 @@ export class HomeTitle extends Component {
   }
 }
 
-const fname = "Sam";
+const fname = "⧅ Sam";
 const lname = "Dravitzki";
 const blurb = "Just a dude"
 

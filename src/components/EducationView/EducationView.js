@@ -7,8 +7,11 @@ export class EducationView extends Component {
   render() {
     return (
       <div className="EducationView">
-        <CoolBackGround bgColor='#fff' textColor='#e8e9ed'/>
-        <h1>Education</h1>
+        {/* <div className="imageContainer">
+        </div>
+        <div className="educationInfoContainer">  */}
+          <CoolBackGround  bgColor='#fff' textColor='#e8e9ed'/>
+        {/* </div> */}
       </div>
     )
   }

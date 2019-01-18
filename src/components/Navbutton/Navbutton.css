@@ -1,6 +1,5 @@
 .Navbutton{
   height: 75%;
-  width: 6vw;
   margin: 0 0.5vw 0 0.5vw;
   border-radius: 5px;
   border-style: solid;
@@ -8,6 +7,11 @@
 
   background-color: aliceblue;
   color: #4373d4;
+
+  margin: 0 10px 0 10px ;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 
   font-size: 14pt;
 }

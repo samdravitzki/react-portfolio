@@ -1,19 +1,34 @@
 import React, { Component } from 'react'
 import './HomeView.css'
-import Navbar from "./../Navbar/Navbar.js";
-import HomeTitle from './../HomeTitle/HomeTitle.js';
 import CoolBackGround from '../CoolBackGround/CoolBackGround';
+import ContentContainer from '../ContentContainer.js';
 
 export class HomeView extends Component {
   render() {
     return (
       <div className="HomeView">
+          {/* <Navbar/> */}
           <CoolBackGround bgColor='#282c34' textColor='#414652' />
-          <Navbar/>
-          <HomeTitle/>
+          <div style={containerWrapperStyle}>
+            <ContentContainer />
+          </div>
+
+          
       </div>
     )
   }
+}
+
+const containerWrapperStyle = {
+  display: 'flex',
+  maxWidth: '100%',
+  width: '100vw',
+  height: '100vh',
+  padding: '6vh 5vw 6vh 5vw',
+  outline: '25px solid #fff',
+  outlineOffset: '-3vw',
+  outlineRadius: '10%'
+
 }
 
 export default HomeView
