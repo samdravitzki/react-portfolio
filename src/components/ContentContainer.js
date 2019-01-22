@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeTitle from './HomeTitle/HomeTitle.js';
+// import HomeDetail from './HomeDetail.js';
 
 // This container will position all of the contents of this page inside a flexbox
 /**
@@ -21,6 +22,7 @@ function ContentContainer() {
           <HomeTitle />
         </div>
         <div class="item" style={flexItem}>
+          {/* <HomeDetail /> */}
         </div>
       </div>
       <div class="row" style={flexRow}>
@@ -53,8 +55,11 @@ const flexRow = {
 }
 
 const flexItem = {
+  display: 'flex',
   margin: '10px',
-  // backgroundColor: 'red',
-  alignSelf: 'stretch',
+  alignContent: 'stretch',
+  alignItems: 'stretch',
+  flexDirection: 'row',
+  justifyContent: 'flex-end',
   flexBasis: '50%'
 }

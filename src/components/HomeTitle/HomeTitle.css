@@ -2,7 +2,12 @@
   /* margin-top: 25vh; */
   /* width: 100%; */
   /* text-align: center; */
-  text-align: right;
+  text-align: right;  
+  align-items: right;
+  align-self: 'stretch';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .Name {

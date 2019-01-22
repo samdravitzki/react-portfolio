@@ -7,7 +7,7 @@ export class HomeTitle extends Component {
       <div className="HomeTitle">
         <span className="Name">{fname}</span> <br></br>
         <span className="Name">{lname}</span><br></br>
-        <span className="Blurb">{blurb}</span>
+        {/* <span className="Blurb">{blurb}</span> */}
       </div>
     )
   }
@@ -15,6 +15,6 @@ export class HomeTitle extends Component {
 
 const fname = "⧅ Sam";
 const lname = "Dravitzki";
-const blurb = "Just a dude"
+// const blurb = "Just a dude"
 
 export default HomeTitle
