@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
-import './HomeView.css'
+import React, { Component } from 'react';
+import styles from './HomeView.module.css';
 import CoolBackGround from '../CoolBackGround/CoolBackGround';
 import ContentContainer from '../ContentContainer.js';
 
 export class HomeView extends Component {
+
   render() {
     return (
-      <div className="HomeView">
-          {/* <Navbar/> */}
+      <div className={styles.homeView}>
           <CoolBackGround bgColor='#282c34' textColor='#414652' />
           <div style={containerWrapperStyle}>
             <ContentContainer />
           </div>
-
-          
       </div>
     )
   }

@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import './CoolBackGround.css'
+import styles from './CoolBackGround.module.css'
 
 export class CoolBackGround extends Component {
   render() {
     return (
       // <div className="CoolBackGround" style={{backgroundColor: this.props.bgColor, color: this.props.textColor}}>
       //   <span class="pattern"> {generateBackground(999)} </span>
-      // </div>
+      //</div>
       
-      <div className="CoolBackGround" style={{backgroundColor: this.props.bgColor, color: this.props.textColor}}>
-        <div className="grid-container"> 
+      <div className={styles.CoolBackGround} style={{backgroundColor: this.props.bgColor, color: this.props.textColor}}>
+        <div className={styles.gridContainer}> 
           {generateSlashes(1000).map(slash => (
-            <div className="grid-cell">{slash}</div>
+            <div>{slash}</div>
           ))} 
         </div>
       </div>
@@ -34,5 +34,6 @@ const generateSlashes = (slashCount) => {
 
   return output;
 }
+
 
 export default CoolBackGround
